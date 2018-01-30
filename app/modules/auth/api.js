@@ -48,3 +48,10 @@ export function checkLoginStatus(callback) {
         });
     };
 }
+
+export function signInWithFacebook (fbToken, callback) {
+    const credential = provider.credential(fbToken);
+    auth.signInWithCredential(credential)
+        .then((user) => callback(true, user, null))
+        .catch((error) => callback(false, null, error));
+}

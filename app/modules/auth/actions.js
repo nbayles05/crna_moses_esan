@@ -56,3 +56,14 @@ export function checkLoginStatus(callback) {
         });
     };
 }
+
+export function signInWithFacebook(facebookToken, successCB, errorCB) {
+    return (dispatch) => {
+        api.signInWithFacebook(facebookToken, function (success, data, error) {
+            if (success) {
+                dispatch({type: t.LOGIN_SUCCESS, data: data});
+                successCB();
+            }else if (error) errorCB(error)
+        });
+    };
+}
