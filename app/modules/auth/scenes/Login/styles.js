@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { theme } from "../../index"
-const {color, windowWidth, padding} = theme;
+const {color, windowWidth, padding, fontSize} = theme;
 
 const styles = StyleSheet.create({
     forgotText:{
