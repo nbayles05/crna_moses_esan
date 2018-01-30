@@ -1,5 +1,6 @@
 import * as t from './actionTypes';
 import * as api from './api';
+import firebase from '../../config/firebase'
 
 export function register(data, successCB, errorCB) {
     return (dispatch) => {

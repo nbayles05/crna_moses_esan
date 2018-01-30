@@ -19,8 +19,8 @@ class Welcome extends React.Component {
         super();
         this.state = {}
 
-        this.onSuccess = this.onSuccess.bind(this);
-        this.onError = this.onError.bind(this);
+        //this.onSuccess = this.onSuccess.bind(this);
+        //this.onError = this.onError.bind(this);
     }
     
     render() {
